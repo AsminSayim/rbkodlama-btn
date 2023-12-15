@@ -1,0 +1,17 @@
+void setup() {
+  pinMode(2, OUTPUT);//2. portu çıkış yap.
+  pinMode(3, OUTPUT);//3. portu çıkış yap.
+  pinMode(4, INPUT); //4. portu giriş yap.
+
+}
+
+void loop() {
+  if (digitalRead(4)==1) // Eğer butona basıldı ise
+ { digitalWrite(2, 1); // 2. porta bağlı LED’i yak.
+ digitalWrite(3, 0); // 3. porta bağlı LED’i söndür.
+ }
+else{ digitalWrite(2, 0); // 2. porta bağlı LED’i söndür.
+ digitalWrite(3, 1); // 3. porta bağlı LED’i yak.
+ }
+
+}
